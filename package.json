@@ -1,0 +1,11 @@
+{
+  "name": "read_books",
+  "version": "1.0.0",
+  "description": "books I have read",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "German Arcila",
+  "license": "ISC"
+}
