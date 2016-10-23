@@ -1,0 +1,21 @@
+<% include partials/header %>
+
+<div class="ui main">
+
+
+  <h1>Show Page</h1>
+
+  <h1><%= book.title %></h1>
+  <img src="<%= book.image %>" alt="" />
+  <p>Published: <%= book.published.toDateString() %></p>
+  <p><%= book.review %></p>
+  <p>
+    <%= book.body %><span>Rating <%= book.rating%> stars out of 5</span>
+  </p>
+  <a href="/books/<%= book._id %>/edit">Edit</a>
+  <form action="/books/<%= book._id %>?_method=DELETE" method="POST">
+    <button >Delete this Book</button>
+  </form>
+</div>
+
+<% include partials/footer %>
